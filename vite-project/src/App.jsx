@@ -13,7 +13,7 @@ export default function LeaderboardApp() {
   const [history, setHistory] = useState([]);
   const [view, setView] = useState("users");
 
-  const API_BASE = import.meta.env.VITE_BACKEND_API_URL;
+  const API_BASE = `${import.meta.env.VITE_BACKEND_API_URL}/api/v1`;
 
   const fetchUsers = async () => {
     try {
